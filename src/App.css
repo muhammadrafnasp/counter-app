@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kenia&family=Lobster&family=Open+Sans&family=Patua+One&family=Poppins:wght@400;500;600&family=Roboto&family=Rubik+80s+Fade&family=Teko&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+.navbar-brand{
+    margin-left: 15px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand:hover{
+    color: #0e2839;
+    transition: .5s ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e2839;
+    height: 90vh;
+    color: white;
+    background-attachment: fixed;
+}
+
+.heading{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.heading span {
+    
+    font-size: 2.5rem;
+    color: #fff;
+    display: inline-flex;
+    animation: rotate 5s infinite;
+}
+@keyframes rotate {
+    0%,
+    75% {
+        transform: rotateY(360deg);
+    }
+}
+.rotate span:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+.rotate span:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+.rotate span:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+.rotate span:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+.rotate span:nth-of-type(5) {
+    animation-delay: 1s;
+}
+.rotate span:nth-of-type(6) {
+    animation-delay: 1.2s;
+}
+.rotate span:nth-of-type(7) {
+    animation-delay: 1.4s;
+}
+.rotate span:nth-of-type(8) {
+    animation-delay: 1.6s;
+}
+.rotate span:nth-of-type(9) {
+    animation-delay: 1.8s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.count{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 6px;
+    background-color: #ec0000;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: #e83e3e;
 }
